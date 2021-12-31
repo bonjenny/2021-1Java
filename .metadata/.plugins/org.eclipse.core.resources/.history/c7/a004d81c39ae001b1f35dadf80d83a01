@@ -1,0 +1,43 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex11_08TextFieldEx extends JFrame {
+
+	public Ex11_08TextFieldEx() {
+		setTitle("텍스트필드 만들기 예제");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+		
+		c.add(new JLabel("이름"));
+		c.add(new JTextField(20));
+		c.add(new JLabel("학과"));
+		c.add(new JTextField("컴퓨터공학과", 20));
+		c.add(new JLabel("주소"));
+		c.add(new JTextField("서울시 …", 20));
+		
+		JPanel pnBtn = new JPanel();
+		JButton btnOk = new JButton("Ok");
+		JButton btnCancel = new JButton("Cancel");
+		
+		btnOk.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
+		
+		pnBtn.add(btnOk);
+		pnBtn.add(btnCancel);
+		c.add(pnBtn);
+		
+		setSize(300,150);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Ex11_08TextFieldEx();
+	}
+
+}

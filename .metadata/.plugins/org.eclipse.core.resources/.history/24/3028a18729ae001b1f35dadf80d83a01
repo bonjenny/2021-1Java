@@ -1,0 +1,18 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex11_06RadioButtonEx extends JFrame {
+
+	public Ex11_06RadioButtonEx() {
+		setTitle("라디오버튼 만들기 예제");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+	}
+
+	public static void main(String[] args) {
+		new Ex11_06RadioButtonEx();
+	}
+
+}

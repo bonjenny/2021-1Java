@@ -1,0 +1,12 @@
+
+public class Ex11_06RadioButtonEx {
+
+	public Ex11_06RadioButtonEx() {
+		
+	}
+
+	public static void main(String[] args) {
+		new Ex11_06RadioButtonEx();
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class Exam01 extends JFrame {
+
+	public Exam01() {
+		setTitle("2020001È«±æµ¿");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		JButton btn1 = new JButton("³ë¶û");
+		JButton btn2 = new JButton("»¡°­");
+		JButton btn3 = new JButton("ÆÄ¶û");
+		btn1.addAc
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

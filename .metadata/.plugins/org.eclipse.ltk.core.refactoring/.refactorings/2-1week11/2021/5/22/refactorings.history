@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ex13_01ThreadTimerEx.java&apos; to &apos;2-1week12/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;2-1week11&apos;&#x0D;&#x0A;- Destination element: &apos;2-1week12/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;Ex13_01ThreadTimerEx.java&apos;" description="Copy compilation unit" destination="=2-1week12/src&lt;" element1="/src&lt;{Ex13_01ThreadTimerEx.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1622118346814" units="1" version="1.0"/>
+</session>

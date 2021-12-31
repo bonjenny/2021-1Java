@@ -1,0 +1,40 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Pr9_01EmailAddressEx extends JFrame {
+	private JTextField tfID = new JTextField("hong@google.com",220);
+	private JTextField tfPW = new JTextField("****",20);
+	
+	public Pr9_01EmailAddressEx() {
+		setTitle("LOGIN FORM");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new GridLayout(2,3));
+		
+		c.add(new JLabel("이메일"));
+		c.add(tfID);
+		c.add(new JLabel("비밀번호"));
+		c.add(tfPW);
+		JButton btnLogin = new JButton("로그인");
+		c.add(btnLogin);
+		c.add(new JButton("취소"));
+		
+		//<Enter> 키가 입력되면 tf에 입력된 문자열을 ta 끝에 추가
+		btnLogin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JTextField t = (JTextField)e.getSource();
+				ta.append(t.getText() + "\n");
+				t.setText("");
+			}
+		});
+		setSize(300,300);
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		new Pr9_01EmailAddressEx();
+	}
+
+}

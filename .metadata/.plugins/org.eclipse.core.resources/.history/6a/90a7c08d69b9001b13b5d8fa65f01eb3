@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Ex12_01paintJPanelEx extends JFrame {
+
+	private MyPanel panel = new MyPanel();
+	public Ex12_01paintJPanelEx() {
+		setTitle("JPanel¿« paintComponent() øπ¡¶");
+		setDefaultCloseo
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

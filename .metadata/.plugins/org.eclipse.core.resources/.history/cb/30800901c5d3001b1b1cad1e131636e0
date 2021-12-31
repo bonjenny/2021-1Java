@@ -1,0 +1,87 @@
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+public class Diary extends JFrame {
+	private static final long serialVersionUID = 1L;
+	/** **/
+	GridBagLayout gBag;
+	JLabel lbl;
+	JTextField tfId, tfPw;
+	JButton btnReset, btnLogin;
+	
+	public Diary() { //积己磊
+		setTitle("促捞绢府");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		loginGUI(); //login GUI 积己
+		
+		setSize(300,500);
+		setVisible(true);
+	} /*end-Diary()*/
+	
+	public void loginGUI() {
+		Container c = getContentPane();
+		gBag = new GridBagLayout();
+		c.setLayout(gBag);
+		
+		//DIARY 力格 积己
+		gbinsert(new JLabel("DIARY"),0,0,4,1);
+		gbinsert(new JLabel(" "),0,1,4,1);
+		
+		gbinsert(new JLabel("ID  "),0,2,1,1); //ID 涝仿沫 积己
+		tfId = new JTextField(20);
+		gbinsert(tfId,1,2,3,1);
+		
+		gbinsert(new JLabel("PW  "),0,3,1,1); //PW 涝仿沫 积己
+		tfPw = new JTextField(20);
+		gbinsert(tfPw,1,3,3,1);
+		gbinsert(new JLabel(" "),0,4,4,1);
+		
+		btnReset = new JButton("RESET");
+		gbinsert(btnReset,0,5,2,1);
+		
+		btnLogin = new JButton("LOGIN");
+		gbinsert(btnLogin,2,5,2,1);
+		
+		btnLogin.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(tfId.getText().toString().equals("jihee") &&
+				   tfPw.getText().toString().equals("diary")) {
+					JOptionPane.showMessageDialog(null, 
+							"炼缴窍技夸", "Message",
+							JOptionPane.ERROR_MESSAGE);
+				} else {
+					JOptionPane.showMessageDialog(null, 
+							"炼缴窍技夸", "Message",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+	}
+	
+	public void gbinsert(Component c, int x, int y, int w, int h) {
+		GridBagConstraints gbc = new GridBagConstraints();
+		gbc.fill = GridBagConstraints.BOTH;
+		gbc.gridx = x;
+		gbc.gridy = y;
+		gbc.gridwidth = w;
+		gbc.gridheight = h;
+		gBag.setConstraints(c,gbc);
+		this.add(c);
+	}
+	
+	public static void main(String[] args) {
+		new Diary(); //积己磊 角青
+	}
+}

@@ -1,0 +1,25 @@
+import java.io.*;
+public class Tr8_8 {
+	public static void main(String[] args) {
+		String txt = "c:\\temp\\phone.txt";
+		
+		try {
+			BufferedReader bin = new BufferedReader(new InputStreamReader(System.in)); // 선언
+			String s = bf.readLine(); // String
+			int c;
+			while( (c = bin.read()) != -1 ) {
+				bout.write(c);
+			}
+			System.out.println("버퍼 작업이 완료되었습니다.");
+			
+			bin.close();
+			bout.close();
+		}
+		catch (IOException e) {
+			System.out.println("입출력 오류");
+		}
+
+		System.out.println("YA 20202865 엄지희");
+		System.out.println("객체지향프로그래밍 응용 5주차 과제 실습문제 8-2");
+	}
+}

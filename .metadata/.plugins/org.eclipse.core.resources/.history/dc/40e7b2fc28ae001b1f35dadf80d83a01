@@ -1,0 +1,15 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex11_07RadioButtonItemEventEx {
+
+	public Ex11_07RadioButtonItemEventEx() {
+		
+	}
+
+	public static void main(String[] args) {
+		new Ex11_07RadioButtonItemEventEx();
+	}
+	
+}

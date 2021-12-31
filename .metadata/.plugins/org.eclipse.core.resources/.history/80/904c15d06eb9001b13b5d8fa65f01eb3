@@ -1,0 +1,9 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Ex14_11TabbedPaneEx {
+	public Ex14_11TabbedPaneEx() {
+		setTitle("ÅÇÆÒ ¸¸µé±â ¿¹Á¦");
+	}
+
+}

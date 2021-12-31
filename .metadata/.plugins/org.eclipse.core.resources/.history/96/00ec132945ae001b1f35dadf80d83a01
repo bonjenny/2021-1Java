@@ -1,0 +1,13 @@
+
+public class Pr9_01EmailAddressEx {
+
+	public Pr9_01EmailAddressEx() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
